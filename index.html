@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cheat-Sheet</title>
+    <meta name="description" content="My webdev cheatsheet">
+    <link href="Styles/styles.css" rel="Stylesheet">
+	<link rel="stylesheet" href="Styles/prism.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#top">TOP</a></li>
+			<li><a href="#html">HTML</a></li>
+			<li><a href="#css">CSS</a></li>
+			<li><a href="#js">JS</a></li>
+		</ul>
+	</nav>
+	<h1 id="top">Welcome to my Cheatsheet</h1>
+	<figure class="pepenotes">
+		<img src="Resources/pepenotes.png" alt="PepeNotes">
+	</figure>
+	<main>
+
+		<!-- Section about HTML -->
+		<section id="html" class="content">
+			<h2>HTML</h2>
+
+			<!-- Common Tags -->
+			<div id="common-tags">
+				<h3>COMMON TAGS</h3>
+				<figure>
+					<figcaption>
+						<p>Example:</p>
+					</figcaption>
+					<pre>
+						<code class="language-html">
+	&lt;div class="content"&gt; 
+		&lt;p"&gt;Hello World!&lt;/p&gt; 
+	&lt;/div&gt;
+						</code>
+					</pre>
+				</figure>
+				<div>
+					<table id="html-tag-table">
+						<thead>
+							<tr>
+								<th>TAGS</th>
+								<th>DESCRIPTION</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>!DOCTYPE</td>
+								<td>Tells the browser what type of file it is opening</td>
+							</tr>
+							<tr>
+								<td>html</td>
+								<td>Can only be used once per page and all HTML tags must be within</td>
+							</tr>
+							<tr>
+								<td>head</td>
+								<td>Information about the page that the browser uses but is not shown to the user</td>
+							</tr>
+							<tr>
+								<td>body</td>
+								<td>All of the content that is displayed in the browser goes within the body tag</td>
+							</tr>
+							<tr>
+								<td>h1 - h6</td>
+								<td>Used for titles on a page, h1 is the largest and used for main titles, size descends and goes to h6 max</td>
+							</tr>
+							<tr>
+								<td>p</td>
+								<td>Used for displaying text on a page</td>
+							</tr>
+							<tr>
+								<td>a</td>
+								<td>Used for creating links nest a href inside to tell link where to go</td>
+							</tr>
+							<tr>
+								<td>div</td>
+								<td>Creates a container</td>
+							</tr>
+							<tr>
+								<td>br</td>
+								<td>Ceates a break, all content after will be on a new line</td>
+							</tr>
+							<tr>
+								<td>span</td>
+								<td>An inline container, can be used to style specific bits of text with CSS</td>
+							</tr>
+							<tr>
+								<td>strong</td>
+								<td>Used to highlight important text, browsers usually render as bold</td>
+							</tr>
+							<tr>
+								<td>em</td>
+								<td>Used to emphasize text with italics</td>
+							</tr>
+							<tr>
+								<td>sup</td>
+								<td>Inline element used to raise text half a character, often used for footnotes like WWW<sup>[1]</sup></td>
+							</tr>
+							<tr>
+								<td>sub</td>
+								<td>Same as sup but lowers text instead like H<sub>2</sub>O</td>
+							</tr>
+							<tr>
+								<td>img</td>
+								<td>Used to embed an image</td>
+							</tr>
+							<tr>
+								<td>video</td>
+								<td>Embeds a media player for video playback</td>
+							</tr>
+							<tr>
+								<td>ul</td>
+								<td>Creates an unordered list with bulletpoints</td>
+							</tr>
+							<tr>
+								<td>ol</td>
+								<td>Creates an ordered list with numbers</td>
+							</tr>
+							<tr>
+								<td>li</td>
+								<td>Items in a list</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- Head -->
+			<div id="head">
+				<h3>HEAD</h3>
+				<p>Example:</p>
+				<pre>
+					<code class="language-html">
+	&lt;meta charset="UTF-8" /&gt;
+	&lt;title&gt;Hello, world!&lt;/title&gt;				
+	&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;					
+	&lt;meta name="description" content="description of site here" /&gt;
+	&lt;link rel="icon" href="image to be used here"&gt;
+	&lt;link rel="stylesheet" href="css/style.css"&gt;
+					</code>
+				</pre>
+			</div>
+
+			<!-- Specicifity -->
+			<div id="specicifty">
+				<h3>SPECICIFITY</h3>
+				<p>ID's have the highest specicifity priority <br>
+					The order of specicifity is: </p>
+					<ol>
+						<li>ID</li>
+						<li>Class</li>
+						<li>Tag</li>
+					</ol>
+					<p>Because of the priority you can use id's to differentiate between things within the same class e.g:</p>
+					<br>
+					<p>&lt;id="one" class="box"&gt; <br>
+					&lt;id="two" class="box"&gt; <br>
+					&lt;id="three" class="box"&gt;</p>
+			</div>
+
+			<!-- How to make tables -->
+			<div id="tables">
+				<h3>TABLES</h3>
+				<figure class="table-example">
+					<figcaption>
+						<p>An example of the syntax for a basic table:</p>
+					</figcaption>
+					<pre>
+						<code class="language-html">
+	&lt;table&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th&gt;Name of col 1&lt;/th&gt;
+				&lt;th&gt;Name of col 2&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td&gt;Col 1 Row 1 data&lt;/td&gt;
+				&lt;td&gt;Col 2 Row 1 Data&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;Col 1 Row 2 Data&lt;/td&gt;
+				&lt;td&gt;Col 2 Row 2 Data&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+		&lt;tfoot&gt;
+			&lt;tr&gt;
+				&lt;td&gt;Col 1 Summary&lt;/td&gt;
+				&lt;td&gt;Col 2 Summary&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tfoot&gt;
+	&lt;/table&gt;
+						</code>
+					</pre>
+					<h3>This code snippet creates the below table with no CSS applied:</h3>
+					<img src="Resources/table-no-css.png" alt="A table with no CSS applied">
+				</figure>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<th>TAG</th>
+								<th>DESCRIPTION</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>table</td>
+								<td>Lables the container as a table</td>
+							</tr>
+							<tr>
+								<td>thead</td>
+								<td>Heading of the table i.e titles of columns</td>
+							</tr>
+							<tr>
+								<td>tbody</td>
+								<td>Main content of the table</td>
+							</tr>
+							<tr>
+								<td>tfoot</td>
+								<td>Summary of the body usually totals</td>
+							</tr>
+							<tr>
+								<td>tr</td>
+								<td>Creates a new row in the table</td>
+							</tr>
+							<tr>
+								<td>th</td>
+								<td>Lables the content within th tag as a heading</td>
+							</tr>
+							<tr>
+								<td>td</td>
+								<td>Data for the cells of the table, each one nested in the same tr is a different column</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<!-- Images/Videos/Audio -->
+			<div id="img-video-audio">
+				<h3 class="img-video-audio">IMAGES/VIDEOS/AUDIO</h3>
+				<h3>Images</h3>
+				<p>To embed an Image use the following syntax:</p>
+				<pre>
+	<code class="language-html">&lt;img src=&quot;IMAGE SOURCE&quot; alt=&quot;A DESCRIPTION OF THE IMAGE&quot;&gt;</code>
+				</pre>
+				<h3>Videos</h3>
+				<p>To embed a Video use the following syntax:</p>
+				<pre>
+	<code class="language-html">&lt;video controls src=&quot;VIDEO SOURCE&quot;&gt;Text that is shown when video could not load&lt;/video&gt;</code>
+				</pre>
+				<h3>Audio</h3>
+				<p>To embed audio use the following syntax:</p>
+				<pre>
+	<code class="language-html">&lt;audio src=&quot;AUDIO SOURCE&quot; controls&gt;&lt;/audio&gt;</code>
+				</pre>
+				<p><strong>The controls attribute enables the browsers default playback controls on the element.</strong></p>
+			</div>
+		</section>
+
+		<!-- Section about CSS -->
+		<section id="css" class="content">
+			<h2>CSS</h2>
+
+			<!-- General things about CSS -->
+			<div id="general">
+				<p>Use commas to target multiple elements works for id's and classes: h1, h2, .section, #content</p>
+				<p>to edit element just type element name on it's own</p>
+				<p>to target classes use .</p>
+				<p>to target id use #</p>
+			</div>
+
+			<!-- CSS Properites -->
+			<div id="rules">
+				<h3>COMMON CSS PROPERTIES</h3>
+				<table id="css-properties-table">
+					<thead>
+						<tr>
+							<th>PROPERTIES</th>
+							<th>DESCRIPTION</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>background-colour</td>
+							<td>Background colour of container</td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td>text colour</td>
+						</tr>
+						<tr>
+							<td>margin</td>
+							<td>outer spacing of element</td>
+						</tr>
+						<tr>
+							<td>padding</td>
+							<td>inner spacing of element</td>
+						</tr>
+						<tr>
+							<td>line-height</td>
+							<td>space between lines of text</td>
+						</tr>
+						<tr>
+							<td>font-family</td>
+							<td>type of font</td>
+						</tr>
+						<tr>
+							<td>font-size</td>
+							<td>size of text</td>
+						</tr>
+						<tr>
+							<td>font-weight</td>
+							<td>thickness of text i.e how bold it is</td>
+						</tr>
+						<tr>
+							<td>text-align</td>
+							<td>aligns text to specified area of parent</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>SIZE UNITS</h3>
+				<p>rem 	Scales relative to the base global font size value set</p>
+				<p>em 	Scales relative to the parent containers font size</p>
+				<p>px	Absoloute measurement in pixels</p>
+				<p>%	A percent of the total size possible based on parent container</p>
+			</div>
+		</section>
+	</main>
+	<script src="JS/prism.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #161616;
+}
+
+a {
+    color: #905;
+    text-decoration: none;
+}
+
+p {
+    padding: 1rem;
+}
+
+ol {
+    padding-left: 2rem;
+}
+
+nav {
+    background-color: #222222;
+    font-size: 2rem;
+    font-weight: 700;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 5rem;
+}
+
+h1 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #07a;
+}
+
+h2 {
+    color: #905;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+h3 {
+    color: #07a;
+    padding: 1rem;
+}
+
+h2, h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3.img-video-audio {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.pepenotes {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    scroll-margin-top: 4.3rem;
+    background-color: #0f0f0f;
+}
+
+table, th, td {
+    border: 3px;
+    border-style: solid;
+    border-color: #464646;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #181818;
+}
+
+table tbody tr:hover {
+    background-color: #353535;
+}
+
+#css {
+    padding-top: 7rem;
+    scroll-margin-top: -3rem;
+}
+
+#css h2 {
+    padding-bottom: 5rem;
+}
